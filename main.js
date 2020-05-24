@@ -1,3 +1,5 @@
+//1
+
 const thousand = () => {
     let number = 0;
 
@@ -10,7 +12,7 @@ const thousand = () => {
 thousand();
 
 
-
+//2
 person = [
  {firstName: "Jane",
   lastName: "Doe",
@@ -18,6 +20,7 @@ person = [
   gender: "female" }
 ]
 
+//3
 for(let key in person) {
     if (key === "birthDate") {
       let birthDate = person[key];
@@ -31,6 +34,7 @@ for(let key in person) {
   }
 }
 
+//4
 const arrayOfPersons = [
   {firstName: "Jane",
   lastName: "Doe",
@@ -57,16 +61,16 @@ const arrayOfPersons = [
 }]
 
 
+//5
 const newArray = arrayOfPersons.map(elem=> elem.firstName)
 console.log(newArray)
 
 
+//6
 const genderMale = arrayOfPersons.filter(boy => boy.gender === "male");
 console.log(genderMale)
 
-const newArrayBirth = arrayOfPersons.map(elem=> elem.birthDate)
-console.log(newArrayBirth)
-
+//7
 const filteredBirthDate = arrayOfPersons.filter((person) => {
   let birthYear = '';
   for (let i = person.birthDate.length - 4; i < person.birthDate.length; i++) {
@@ -76,3 +80,6 @@ const filteredBirthDate = arrayOfPersons.filter((person) => {
     console.log(person);
   }
 })
+
+const newArrayBirth = arrayOfPersons.map(elem=> elem.birthDate)
+console.log(newArrayBirth)
